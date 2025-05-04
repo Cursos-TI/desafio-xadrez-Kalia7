@@ -11,8 +11,9 @@ const int casasRainha = 8;
 const int casasCavaloB = 2;
 const int casasCavaloE = 1;
 
-int main() {
-    
+int main()
+{
+
     // TORRE - usando for
     printf("Movimento da Torre:\n");
     for (int i = 0; i < casasTorre; i++)
@@ -53,12 +54,11 @@ int main() {
             }
         }
     }
-    
 
-return 0;
+    return 0;
 }
 // O código executa os movimentos da torre, bispo e rainha nessa ordem. E a quantidade de casas que cada um deve se mover é definida por uma constante.
 // O loop for inicializa uma váriavel e repete o código enquanto essa váriavel for menor que o valor da constante casasTorre, assim a torre andará 5 casas a sua direita.
-// O while verifica se a expressão i < casasBispo é verdadeira, se for, ele imprime o valor da função printf e incrementa a variavel, e repete até que a expressão se torne falsa. 
+// O while verifica se a expressão i < casasBispo é verdadeira, se for, ele imprime o valor da função printf e incrementa a variavel, e repete até que a expressão se torne falsa.
 // Já o do-whille, permite que o movimento seja feito ao menos uma vez, mesmo que a expressão seja falsa, e incrementa a variavel, e realiza a repetição até que essa expressão se torne falsa.
-// O movimento do cavalo é feito com loops aninhados for e while, 
+// O movimento do cavalo é feito com loops aninhados for e while, enquanto o for executa os movimentos para baixo, o movimento perperdicular só é realizado após a segunda execução do loop for. Por isso, foi utilizado um if para que o movimento fosse descrito passo a passo
